@@ -51,6 +51,7 @@ a{
   width: 20%;
   padding: 0.5em;
   font-size: 0.6em;
+  z-index: 2;
 }
 
 .navbar h3{
@@ -114,31 +115,82 @@ a{
 }
 
 @media only screen and (min-width:600px) {
-  .header, .press, .about{
+  body{
+    background-color: white;
+  }
+  .header{
     display: none;
   }
-  .small {
-    width: 42.5%;
-    height: 42.5vh;
-    margin: 0 5% 2.5vh 5%;
+  .large{
+    width: 100%;
+    height: 70vh;
+    margin: 0;
   }
-  div:nth-child(2) {
-    margin-right: 0;
+
+  .small{
+    width: 48.5%;
+    height: 26vh;
+    margin: 2vh 0 0 0;
   }
+
+  .press{
+    background-color: #051e00;
+  }
+
+  .about{
+    background-color: black;
+    margin-left: 3%;
+  }
+
+   .navbar{
+    width: 20%;
+    margin: 5% 0 0 5%;
+    position: fixed;
+    opacity: .95;
+  }
+
+  .navbar ul{
+    text-align: left;
+  }
+
+  .navbar ul li{
+    width: 100%;
+    padding: 0.7em 1em;
+  }
+
+  .press a{
+    font-size: 2em;
+    text-align: center;
+    padding: 2em 1em;
+    text-transform: uppercase;
+  }
+
+  .about p{
+    font-size: 1.1em;
+    padding: 0 1em;
+  }
+
+  .about img{
+    margin-left: 1em;
+  }
+
 }
 
 @media only screen and (min-width:1024px) {
   .large {
-    width: 70%;
-    height: 90vh;
-    margin: 5vh 0 5vh 5%;
+    width: 80%;
+    height: 100vh;
+    margin-right: 5%;
   }
 
+
+
   .small {
-    width: 17.5%;
+    width: 12.5%;
     height: 42.5vh;
-    margin: 5vh 5% 5vh 2.5%;
+
   }
+
 
   div:nth-child(2) {
     margin-bottom: 0;
