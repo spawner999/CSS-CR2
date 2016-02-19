@@ -1,9 +1,6 @@
 /* For testing only */
 
-*:not(body):not(html) {
-  box-sizing:border-box;
-  border:1px dashed #000;
-}
+
 
 .columns {
   min-height: 100px;
@@ -25,22 +22,16 @@ body {
 a{
   text-decoration: none;
   font-size: 0.85em;
+  width: 100%;
+  height: 100%;
+  display: block;
+  padding: 1em;
+  color: #444;
 
 }
 .column {
   float: left;
-  background-color: seagreen;
   overflow: hidden;
-}
-
-ul{
-  list-style: none;
-  padding: 0 5%;
-}
-ul li{
-  width: 20%;
-  padding: 0.5em;
-  font-size: 0.6em;
 }
 
 .navbar{
@@ -48,9 +39,28 @@ ul li{
   margin: 2.5vh 5% 0 5%;
 }
 
+.navbar ul{
+  overflow: auto;
+  list-style: none;
+  background-color: #f4f4f4;
+  text-align: center;
+  padding: 0;
+}
+
+.navbar ul li{
+  width: 20%;
+  padding: 0.5em;
+  font-size: 0.6em;
+}
+
 .navbar h3{
-  width: 100%;
+  background-image: url("../img/logo-text.png");
+  background-repeat: no-repeat;
+  background-size: 126px auto;
+  background-position: left;
+  width: 95%;
   padding: 1em;
+  margin-left: 5%;
 }
 
 .large {
@@ -69,26 +79,44 @@ ul li{
   margin:0 5%;
 }
 .header a{
-  width: 100%;
-  height: 100%;
-  display: block;
-  padding: 1em 0;
+
 }
-.header h3, h5{
-  padding: 0.5em 0;
+.header h3{
+  padding: 1em 0 0;
 }
 
-.small {
+.header h6{
+  padding: 0.5em 0 2em 0;
+}
+.press{
   width: 90%;
-  height: 20vh;
   margin: 2.5vh 5%;
+}
+.about {
+  width: 90%;
+  margin: 2.5vh 5%;
+  padding: 1em;
 
 }
+
 .uppercase{
   text-transform: uppercase;
 }
 
+.black-bg{
+  background-color: black;
+  color: white;
+}
+
+.white-bg{
+  background-color: white;
+  color: #444;
+}
+
 @media only screen and (min-width:600px) {
+  .header, .press, .about{
+    display: none;
+  }
   .small {
     width: 42.5%;
     height: 42.5vh;
