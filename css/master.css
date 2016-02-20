@@ -4,6 +4,8 @@
 }
 
 body {
+  width: 100%;
+  height: 100vh;
   background-color: black;
 }
 
@@ -12,10 +14,11 @@ a {
   font-size: 0.85em;
   width: 100%;
   height: 100%;
+  display: block;
+  padding: 1em;
   color: #444;
 
 }
-
 .column {
   float: left;
   overflow: hidden;
@@ -32,13 +35,14 @@ a {
   overflow: auto;
   list-style: none;
   background-color: #f4f4f4;
+  text-align: center;
   padding: 0;
 }
 
-.navbar ul a {
+.navbar a {
   width: 20%;
   font-size: 0.7em;
-  padding: 0.5em 0;
+  padding: 0.5em;
 }
 
 .navbar h3 {
@@ -46,8 +50,9 @@ a {
   background-repeat: no-repeat;
   background-size: 126px auto;
   background-position: left;
-  height: auto;
+  width: 95%;
   padding: 1em;
+  margin-left: 0.5em;
 }
 
 .large {
@@ -82,18 +87,16 @@ a {
 .bottom {
   background-color: white;
   color: #444;
-  padding-left: 1em;
 }
 
 .press {
-  padding-left: 1em;
   width: 90%;
   margin: 2.5vh 5%;
   color: #444;
   background-color: white;
 }
 
-.press h3, h6 {
+.press h3, h6{
   font-weight: normal;
   font-size: 1em;
 }
@@ -120,21 +123,21 @@ a {
   }
 
   .navbar {
-    width: 160px;
-    padding: 0 0 1em 1em;
-    margin: 5% 0 0 5%;
+    width: 22%;
+    margin: 2.5% 0 0 2.5%;
     position: fixed;
     opacity: .95;
     background-color: #f4f4f4;
+    padding: 0.1em;
   }
 
-  .navbar h3{
-    margin: 0;
+  .navbar ul {
+    text-align: left;
   }
 
   .navbar ul a {
     width: 100%;
-    padding: 0.25em 0em;
+    padding: 0.5em 1em;
   }
 
   .large {
@@ -149,7 +152,7 @@ a {
 
   .top {
     position: fixed;
-    margin: 55vh 0 0 5%;
+    margin: 55vh 0 0 2.5%;
     background: transparent;
     text-shadow:2px 1px 2px #000000;
   }
@@ -158,6 +161,7 @@ a {
     width: 49.5%;
     height: 28vh;
     margin: 1vh 0 0 0;
+    padding: 2em;
   }
 
    .press a, .about a {
@@ -176,7 +180,6 @@ a {
 
   .press {
     background-color: #051e00;
-    position: relative;
   }
 
   .about {
@@ -185,24 +188,10 @@ a {
   }
 
   .press a {
-    width: 100%;
-    height: 30%;
-    font-size: 1em;
     text-align: center;
-    text-transform: uppercase;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-
-  .about a {
-    width: 90%;
-    margin: auto;
   }
 
   .about a p {
-    width: 100%;
     margin-top: 1.5em;
   }
 
@@ -212,6 +201,10 @@ a {
 }
 
 @media only screen and (min-width:1100px) {
+  .navbar {
+    width: 10.5%;
+  }
+
   .large {
     width: 75%;
     height: 100vh;
@@ -229,10 +222,10 @@ a {
   }
 
   .press a, .about a {
-   font-size: 1.05em;
+    font-size: 1.05em;
   }
 
   .about {
-    margin: 2vh 0 0 0;
+  margin: 2vh 0 0 0;
   }
 }
